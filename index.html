@@ -1,99 +1,82 @@
 <!DOCTYPE html>
-<html lang="pt-BR"> 
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-escale=1.0" />
-    <title> Portal da Transparência Esportiva </title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academia de Jiu-Jitsu</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Jiu-Jitsu</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#competicoes">Competições</a></li>
+      <li><a href="#patrocinadores">Patrocinadores</a></li>
+      <li><a href="#calendario">Calendário</a></li>
+      <li><a href="#doacoes">Doações</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a href="#login">Login</a></li>
+    </ul>
+  </nav>
 
-<!--<header>
-    <nav class="navbar">
-        <h1 class="logo">Jiu-Jitsu</h1>
-        <ui class="menu">
-        <li><a href="#">Voluntário</a></li>
-        <li><a href="#">Fotos</a></li>
-        <li><a href="#">Competições</a></li>
-        <li><a href="#">Patrocínio</a></li>
-        <li><a href="#">Doações</a></li>
-        <li><a href="#">Calendário</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato </a></li>
-        <li><a href="#">Login</a></li>
-        </ui>
-    </nav>  
-</header> -->
+  <!-- Hero Section -->
+  <section id="home" class="home">
+    <div class="hero">
+      <h1>Transformando vidas através do Jiu-Jitsu</h1>
+      <p>Disciplina, respeito e superação dentro e fora do tatame</p>
+      <a href="#doacoes" class="btn">Seja um Apoiador</a>
+    </div>
+  </section>
 
-<!-- <header>
-    <nav class="navbar">
-        <hi class="logo"> Jiu-Jitsu</hi>
-        botão do menu para o celular 
-         <button class="menu-toggle" aria-label="Abrir menu">
-             &#9776;
-         </button> 
+  <!-- Carrossel -->
+  <section class="carousel">
+    <h2>Notícias Recentes</h2>
+    <div class="carousel-container">
+      <div class="slide active">
+        <img src="https://picsum.photos/800/300?1" alt="Notícia 1">
+        <p>Alunos conquistam medalhas no campeonato estadual!</p>
+      </div>
+      <div class="slide">
+        <img src="https://picsum.photos/800/300?2" alt="Notícia 2">
+        <p>Nova turma de iniciantes começa neste mês.</p>
+      </div>
+      <div class="slide">
+        <img src="https://picsum.photos/800/300?3" alt="Notícia 3">
+        <p>Doações possibilitam compra de novos tatames!</p>
+      </div>
+    </div>
+    <div class="carousel-controls">
+      <span class="prev">❮</span>
+      <span class="next">❯</span>
+    </div>
+  </section>
 
-         Menu de navegação 
-          <u1 class="menu">
-            <li><a href="#">Voluntário</a> </li>
-            <li><a href="#">Competições</a> </li>
-            <li><a href="#">Patrocínio</a> </li>
-            <li><a href="#">Calendário</a> </li>
-            <li><a href="#">Doações</a> </li>
-            <li><a href="#">Contato</a> </li>
-            <li><a href="#">Sobre</a> </li>
-            <li><a href="#">Login</a> </li>
-          </u1>        
-    </nav>
-</header> 
--->
+  <!-- Destaques -->
+  <section class="destaques">
+    <h2>Destaques</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Competições</h3>
+        <p>Confira os próximos torneios e campeonatos.</p>
+      </div>
+      <div class="card">
+        <h3>Histórias de Sucesso</h3>
+        <p>Conheça alunos que mudaram de vida com o Jiu-Jitsu.</p>
+      </div>
+      <div class="card">
+        <h3>Seja um Apoiador</h3>
+        <p>Ajude a manter o projeto e faça parte desta causa.</p>
+      </div>
+    </div>
+  </section>
 
-<nav class="navbar">
-    <div class = "logo">Academia Jiu-Jitsu</div>
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2025 Academia de Jiu-Jitsu | Todos os direitos reservados</p>
+  </footer>
 
-    <!-- Botão hamburgue -->
-     <div class="menu-toggle" id="menu-toggle">
-        ☰
-     </div>
-     
-     <!-- Menu principal -->
-
-     <ul class="menu">
-            <li><a href="#Voluntario">Voluntário</a></li>
-            <li><a href="#competicoes">Competições</a></li>
-            <li><a href="#Patrocinio">Patrocínio</a></li>
-            <li><a href="#calendario">Calendário</a></li>
-            <li><a href="#doacoes">Doações</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#login">Login</a></li>          
-     </ul>
-</nav>
-
-<selection class="hero">
-    <h1>BEM VINDO AO SITE</h1>
-    <p> AQUI VOCÊ ENCONTRARÁ TUDO SOBRE O JIU-JITSU </p>
-    <a href="#"> SAIBA MAIS</a>
-
-
-
-
-
-</selection>
-
-
-
-<main>
-    <selection class="intro">
-        <h2>Bem-vindo ao Portal da Transparência Esportiva </h2>
-        <p>Um espaço para apoiar e divulgar jovens atletas do Jiu-Jitsu</p>
-    </selection>
-</main>
-
-<footer>
-    <p>&copy; 2025 Projeto Jiu-Jitsu Social</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,13 +1,29 @@
-// pega o botão e o menu
+let slides = document.querySelectorAll(".slide");
+let current = 0;
 
-const menuToggle = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.menu');
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove("active");
+    if (i === index) {
+      slide.classList.add("active");
+    }
+  });
+}
 
-// Quando clicar no botão, alterna a classe "show"
-
-menuToggle = addEventListener('click', () => {
-    menu.classList.toggle('show');
+document.querySelector(".next").addEventListener("click", () => {
+  current = (current + 1) % slides.length;
+  showSlide(current);
 });
 
-document.getElementById("menu-toggle").addEventListener("click", function()
-{document.querySelector(".menu").classList.toggle("show");});
+document.querySelector(".prev").addEventListener("click", () => {
+  current = (current - 1 + slides.length) % slides.length;
+  showSlide(current);
+});
+
+// Automático
+setInterval(() => {
+  current = (current + 1) % slides.length;
+  showSlide(current);
+}, 5000);
+
+showSlide(current);
